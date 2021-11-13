@@ -11,7 +11,7 @@ Live Site Link Click Here   [CaLeader]( https://full-stack-website-36e6d.web.app
 * User Login Google-Sign-in
 * User Easily Register Name-Email-Password
 * User easily give me her/him Fide Back
-* Rating DYnamic
+* Rating Dynamic
 
 * "I spent a Lot of money on booze, birds and fast cars. The reast I just squandered." 
 * "It's a never ending battle of making your cars better and also trying to be better yourself."

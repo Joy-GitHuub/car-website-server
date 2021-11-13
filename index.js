@@ -27,6 +27,7 @@ async function run() {
         const userReviewCollection = database.collection('userReview');
 
 
+        // All Get API
         // GET API
         app.get('/addProduct', async (req, res) => {
             const cursor = serviceCollection.find({});
@@ -142,6 +143,9 @@ async function run() {
             res.json(result);
         })
 
+
+        // All PUT API ******************
+
         // Put Google User API
         app.put('/users', async (req, res) => {
             const user = req.body;
@@ -155,20 +159,6 @@ async function run() {
 
 
 
-        // status update
-        // app.put("/statusUpdate/:id", async (req, res) => {
-        //     const filter = { _id: ObjectId(req.params.id) };
-        //     console.log(req.params.id);
-        //     const result = await ordersCollection.updateOne(filter, {
-        //         $set: {
-        //             status: req.body.status,
-        //         },
-        //     });
-        //     res.send(result);
-        //     console.log(result);
-        // });
-
-
         // Make Admin API
         app.put('/users/admin', async (req, res) => {
             const user = req.body;
@@ -179,6 +169,7 @@ async function run() {
             res.json(result)
         })
 
+        // Suatus Update API
         app.put("/statusUpdate/:id", async (req, res) => {
             const filter = { _id: ObjectId(req.params.id) };
             console.log(req.params.id);
@@ -192,13 +183,7 @@ async function run() {
         });
 
 
-        // app.put('/statusUpdate/shiping', async (req, res) => {
-        //     const user = req.body;
-        //     const filter = { email: user._id };
-        //     const updateDoc = { $set: { status: 'Shiping' } };
-        //     const result = await userBookingCollection.updateOne(filter, updateDoc);
-        //     res.json(result);
-        // })
+
 
     }
 
