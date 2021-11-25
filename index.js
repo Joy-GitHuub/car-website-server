@@ -159,6 +159,7 @@ async function run() {
 
 
 
+        // ALL PUT API ***********
         // Make Admin API
         app.put('/users/admin', async (req, res) => {
             const user = req.body;
